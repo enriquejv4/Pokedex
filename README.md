@@ -5,4 +5,21 @@ In this python program I'm scraping the [pokeapi](https://pokeapi.co/) web page.
 I'm scraping 1010 Json files. Each Json file contains all information for each pokemon.
 
 Python code will extract selected information for each of these Json files and create a postgres database.
+In this python code, from line 6 to line 16, we are connecting to a postgres database through **hidden.py**.
 
+The file **hidden.py** is a python code that only contains a function with your postgre's database connection info.
+
+```
+def secrets(): 
+    return {"host": "********",
+            "port": ****,
+            "database": "*********",
+            "user": "*********",
+            "pass": "*****"}
+```
+
+From lines 18 to 29 we just defining two help functions.
+
+From lines 31 to 43 we are creating a table with the columns we wish.
+
+Finally, from lines 45 to 56 a for bucle fill the database's columns.
