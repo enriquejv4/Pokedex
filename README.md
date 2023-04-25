@@ -22,4 +22,4 @@ From lines 18 to 29 we just defining two help functions.
 
 From lines 31 to 43 we are creating a table with the columns we wish.
 
-Finally, from lines 45 to 56 a for bucle fill the database's columns.
+Finally, from lines 45 to 56 a *for bucle* fill the database's columns.
